@@ -28,4 +28,21 @@ header .location-btn {
     box-shadow: 0 4px 20px -2px #0084ff9f;
 }
 
+header .city-input{
+    width: 70%;
+    height: 30px;
+    background-color: #f1f1f1;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px 1px rgba(216, 216, 216, 0.5);
+    padding-left: 1rem;
+}
+header .country-input{
+    width: 25%;
+    height: 30px;
+    background-color: #f1f1f1;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px 1px rgba(216, 216, 216, 0.5);
+    padding-left: 1rem;
+}
+
 /* end header */

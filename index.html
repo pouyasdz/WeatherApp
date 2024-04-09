@@ -10,16 +10,25 @@
 
     <header>
         <button class="menu-btn"><i class="ri-menu-4-fill"></i></button>
-        <button class="location-btn">Location <i class="ri-map-pin-line"></i></button>
+        <button class="location-btn" onclick="changeLocation()">Location <i class="ri-map-pin-line"></i></button>
+
+        <input list="cities" class="city-input hidden" placeholder="City">
+        <datalist id="cities">
+         
+        </datalist>
+
+        <input list="countiries" class="country-input hidden" placeholder="Country">
+        <datalist id="countiries">
+        </datalist>
     </header>
     
     <main class="container">
         <div class="status-box">
             <div class="top">
-                <img src="./assets/public/icons/sun-clouds.svg" alt="">
-                <h3>27°</h3>
+                <img src="./assets/public/icons/sun-clouds.svg" alt="" id="cloud-status">
+                <h3 id="main-temp">0°</h3>
             </div>
-            <h5>IR, Shiraz</h5>
+            <h5 id="position">--, ----</h5>
         </div>
         <div class="detail-box">
             <h3>Air Quality</h3>
@@ -27,32 +36,38 @@
 
                 <div class="flex flex-col">
                     <i class="ri-windy-fill"></i>
-                    <p>9km/h</p>
+                    <span>Wind speed</span>
+                    <p id="wind-speed">00</p>
                 </div>
 
                 <div class="flex flex-col">
-                    <i class="ri-windy-fill"></i>
-                    <p>9km/h</p>
+                    <i class="ri-drop-line"></i>
+                    <span>Dioxide</span>
+                    <p id="dioxide">00</p>
                 </div>
 
                 <div class="flex flex-col">
-                    <i class="ri-windy-fill"></i>
-                    <p>9km/h</p>
+                    <i class="ri-showers-line"></i>
+                    <span>Rain</span>
+                    <p id="rain">00</p>
                 </div>
 
                 <div class="flex flex-col">
-                    <i class="ri-windy-fill"></i>
-                    <p>9km/h</p>
+                    <i class="ri-haze-line"></i>
+                    <span>UV rays</span>
+                    <p id="uv">00</p>
                 </div>
 
                 <div class="flex flex-col">
-                    <i class="ri-windy-fill"></i>
-                    <p>9km/h</p>
+                    <i class="ri-temp-hot-fill"></i>
+                    <span>Temp</span>
+                    <p id="temp">00</p>
                 </div>
 
                 <div class="flex flex-col">
-                    <i class="ri-windy-fill"></i>
-                    <p>9km/h</p>
+                    <i class="ri-haze-line"></i>
+                    <span >Ozone</span>
+                    <p id="ozone">00</p>
                 </div>
             </div>
         </div>

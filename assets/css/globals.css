@@ -21,6 +21,12 @@ button{
     background-color: transparent;
 }
 
+input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
 main {
     padding-top: 2rem;
 }
@@ -33,4 +39,7 @@ main {
 }
 .flex-row {
     flex-direction: row;
+}
+.hidden{
+    display: none !important;
 }

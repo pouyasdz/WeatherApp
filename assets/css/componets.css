@@ -74,8 +74,8 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  row-gap: 3rem;
-  column-gap: 2rem;
+  row-gap: 2rem;
+  column-gap: 1rem;
 }
 .detail-box .items .flex {
     font-size: larger;
@@ -83,5 +83,9 @@ header {
 }
 .detail-box .items .flex i {
     color: #2F90FF;
+}
+.detail-box .items .flex span {
+    font-size: 15px;
+    color: #CDD2DE;
 }
 /* end detail-box */
