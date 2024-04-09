@@ -1,3 +1,31 @@
 @import "globals.css";
 @import "componets.css";
 @import "mediaquery.css";
+@import "../public/fonts/remixicon.css";
+
+/* start header */
+header .menu-btn, header .location-btn{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 4px 10px 4px rgb(178, 215, 222, 25%);
+    font-size: larger;
+}
+header .location-btn {
+    width: max-content;
+    gap: .1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 12px;
+    background-color: #5db0ff;
+    color: white;
+    box-shadow: 0 4px 20px -2px #0084ff9f;
+}
+
+/* end header */
