@@ -64,10 +64,10 @@ function renderData(city, country) {
           "./assets/public/icons/sun.svg";
         break;
 
-        case "Rain":
-            document.querySelector("#cloud-status").src =
+      case "Rain":
+        document.querySelector("#cloud-status").src =
           "./assets/public/icons/sun-clouds-rain.svg";
-            break;
+        break;
 
       default:
         break;
@@ -116,17 +116,8 @@ if (window.sessionStorage.getItem(sesstionStorage)) {
 }
 
 inpCountry.addEventListener("click", () => (inpCountry.value = ""));
-inpCountry.addEventListener("change", (e) => {
-  cities.innerHTML = null;
-  const country = e.target.value;
-  serv.getAllCityByCountry(country).then((res) => {
-    res.data.map((city) => {
-      cities.innerHTML += `<option value="${city}">${city}</option>`;
-    });
-  });
-});
-inpCity.addEventListener("click", () => (inpCity.value = ""));
-inpCity.addEventListener("change", () => {
+inpCity.addEventListener("keypress", (e) => {
+  if (e.keyCode != 13) return;
   const position = {
     country: inpCountry.value,
     city: inpCity.value,
