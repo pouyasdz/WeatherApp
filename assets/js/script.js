@@ -4,6 +4,7 @@ const inpCountry = document.querySelector(".country-input");
 const inpCity = document.querySelector(".city-input");
 const locationBtn = document.querySelector(".location-btn");
 const menuBtn = document.querySelector(".menu-btn");
+const sesstionStorage = "position";
 
 class Service {
   #openWeatherBaseUrl = "https://api.openweathermap.org/data/2.5";
@@ -99,7 +100,7 @@ function hideLocation() {
   inpCity.classList.add("hidden");
 }
 const serv = new Service();
-const sesstionStorage = "position";
+
 
 serv.getAllCountry().then((res) => {
   countiries.innerHTML = null;
